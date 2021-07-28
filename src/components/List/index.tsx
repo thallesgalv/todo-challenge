@@ -4,6 +4,7 @@ import { useGlobalContext } from '../../contexts/GlobalContext'
 import useMedia from '../../hooks/useMedia'
 import Checkbox from '../Checkbox'
 import Controls from '../Controls'
+import { StyledControls } from '../Controls/styles'
 import ListItem from '../ListItem'
 import { Disclaimer, StyledList } from './styles'
 
@@ -14,6 +15,7 @@ const List: React.FC = () => {
     updateTask,
     saveTasks,
     loadTasks,
+    clearCompletedTasks,
     filter,
     setTasks,
     setRearranged
@@ -128,7 +130,14 @@ const List: React.FC = () => {
                   />
                 </ListItem>
               )))}
-
+        {isMobile && (
+          <StyledControls>
+            <li>
+              {tasks && tasks.filter(i => !i.isChecked).length} items left
+            </li>
+            <li onClick={() => clearCompletedTasks()}>Clear Completed</li>
+          </StyledControls>
+        )}
         {!isMobile && <Controls />}
       </StyledList>
       {isMobile && <Controls />}
