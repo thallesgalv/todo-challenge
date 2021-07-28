@@ -1,7 +1,7 @@
 # Frontend Mentor Challenge
 
 ## Todo app
-https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW
+[Challenge Link](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW)
 [App Link](https://thallesgalv.github.io/todo-challenge/)
 
 ## Brief
