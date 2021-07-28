@@ -1,7 +1,7 @@
 # Frontend Mentor Challenge
 
 ## Todo app
-https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW/hub/todo-app-pMC3thy1A
+https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW
 
 ## Brief
 
